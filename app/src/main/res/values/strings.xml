@@ -6,16 +6,20 @@
     <string name="play">Play</string>
     <string name="learn">Learn</string>
     <string name="about">About</string>
+    <string name="none">Click Next To Get Started</string>
+    <string name="back">Return</string>
+    <string name="next">Next</string>
 
-    <string name="red">Red</string>
-    <string name="orange">Orange</string>
-    <string name="yellow">Yellow</string>
-    <string name="green">Green</string>
-    <string name="blue">Blue</string>
-    <string name="purple">Purple</string>
-    <string name="pink">Pink</string>
-    <string name="white">White</string>
-    <string name="grey">Grey</string>
-    <string name="brown">Brown</string>
-    <string name="black">Black</string>
+    <string name="red">Red</string> <!--1-->
+    <string name="orange">Orange</string> <!--2-->
+    <string name="yellow">Yellow</string> <!--3-->
+    <string name="green">Green</string> <!--4-->
+    <string name="blue">Blue</string> <!--5-->
+    <string name="purple">Purple</string> <!--6-->
+    <string name="pink">Pink</string> <!--7-->
+    <string name="white">White</string> <!--8-->
+    <string name="grey">Grey</string> <!--9-->
+    <string name="brown">Brown</string> <!--10-->
+    <string name="black">Black</string> <!--11-->
+
 </resources>
