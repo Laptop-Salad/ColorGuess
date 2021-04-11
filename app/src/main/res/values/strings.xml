@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">color-guess</string>
+    <string name="app_name">Colour Guess</string>
     <string name="colour_guess">Colour Guess</string>
     <string name="test">Test</string>
     <string name="test_button">test</string>
@@ -10,6 +10,7 @@
     <string name="back">Return</string>
     <string name="next">Next</string>
 
+    <!-- Colour Strings -->
     <string name="red">Red</string> <!--1-->
     <string name="orange">Orange</string> <!--2-->
     <string name="yellow">Yellow</string> <!--3-->
@@ -21,5 +22,8 @@
     <string name="grey">Grey</string> <!--9-->
     <string name="brown">Brown</string> <!--10-->
     <string name="black">Black</string> <!--11-->
+
+    <!-- Strings for about page -->
+    <string name="aboutDesc">An app that is aimed at teaching younger children their colours.</string>
 
 </resources>
