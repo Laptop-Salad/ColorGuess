@@ -26,4 +26,12 @@
     <!-- Strings for about page -->
     <string name="aboutDesc">An app that is aimed at teaching younger children their colours.</string>
 
+    <!-- Strings for play page -->
+    <string name="optionOne">One</string>
+    <string name="optionTwo">Two</string>
+    <string name="optionThree">Three</string>
+    <string name="optionFour">Four</string>
+    <string name="what_colour_is_this">What Colour Is This?</string>
+    <string name="done">Done</string>
+    <string name="check_answer">Check Answer</string>
 </resources>
