@@ -22,20 +22,21 @@ class playActivity : AppCompatActivity() {
         val doneBtn = binding.doneButton
         var image = binding.playImg
 
+        //The first image the user sees will be red
         image.setImageResource(R.drawable.red)
 
         //Takes user back to the start page (MainActivity)
         nextBtn.setOnClickListener{
-            done()
+            next()
         }
 
         //Goes to next question
         doneBtn.setOnClickListener{
-            next()
+            done()
         }
     }
     //Variable to count how many times the next button is clicked
-    var clickCount = 0
+    private var clickCount = 0
 
     //This function is called when the next button is clicked
     private fun next(){
@@ -46,12 +47,60 @@ class playActivity : AppCompatActivity() {
 
         clickCount += 1
 
+
         when(clickCount){
             1 -> {
-                image.setImageResource(R.drawable.orange)
+                image.setImageResource(R.drawable.orange) //Sets image to orange
+                val red = text.text //Gets text from EditText
+                text.setText(getString(R.string.what_colour_is_this)) //Sets EditText to question string
             }
             2 -> {
-
+                image.setImageResource(R.drawable.yellow) //Sets image to yellow
+                val orange = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            3 -> {
+                image.setImageResource(R.drawable.green) //Sets image to green
+                val yellow = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            4 -> {
+                image.setImageResource(R.drawable.blue) //Sets image to blue
+                val green = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            5 -> {
+                image.setImageResource(R.drawable.purple) //Sets image to purple
+                val blue = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            6 -> {
+                image.setImageResource(R.drawable.pig) //Sets image to pink
+                val purple = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            7 -> {
+                image.setImageResource(R.drawable.white) //Sets image to white
+                val pink = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            8 -> {
+                image.setImageResource(R.drawable.grey) //Sets image to grey
+                val white = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            9 -> {
+                image.setImageResource(R.drawable.brown) //Sets image to brown
+                val grey = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            10 -> {
+                image.setImageResource(R.drawable.black) //Sets image to black
+                val brown = text.text
+                text.setText(getString(R.string.what_colour_is_this))
+            }
+            11 -> {
+                val black = text.text
             }
         }
 
