@@ -4,6 +4,8 @@ package com.example.color_guess
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -34,6 +36,7 @@ class playActivity : AppCompatActivity() {
         doneBtn.setOnClickListener{
             done()
         }
+
     }
     //Variable to count how many times the next button is clicked
     private var clickCount = 0
@@ -41,9 +44,13 @@ class playActivity : AppCompatActivity() {
     //This function is called when the next button is clicked
     private fun next(){
         //Finding the ImageView
-        var image = findViewById<ImageView>(R.id.playImg)
+        val image = findViewById<ImageView>(R.id.playImg)
         //Finding the EditText View
-        var text = findViewById<EditText>(R.id.textInput)
+        val text = findViewById<EditText>(R.id.textInput)
+        //Finding Next Button
+        val nextBtn = findViewById<Button>(R.id.play_next)
+        //Finding Done Button
+        val doneBtn = findViewById<Button>(R.id.doneButton)
 
         clickCount += 1
 
@@ -101,11 +108,20 @@ class playActivity : AppCompatActivity() {
             }
             11 -> {
                 val black = text.text
+                nextBtn.visibility = View.INVISIBLE //Makes next button invisible
+                doneBtn.visibility = View.INVISIBLE //Makes done button invisible
+                //image.visibility = View.INVISIBLE //Makes the image invisible
+                //text.visibility = View.INVISIBLE //Makes the text invisible
+
+                toScore()
             }
         }
 
     }
-
+    private fun toScore(){
+        intent = Intent(this, ScoreActivity::class.java)
+        startActivity(intent)
+    }
     //This function is called when the done button is clicked
     private fun done(){
         intent = Intent(this, MainActivity::class.java)
