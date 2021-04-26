@@ -54,4 +54,14 @@
         app:layout_constraintStart_toEndOf="@+id/doneButton"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blank"
+        app:layout_constraintBottom_toTopOf="@+id/playImg"
+        app:layout_constraintEnd_toStartOf="@+id/play_next"
+        app:layout_constraintStart_toEndOf="@+id/doneButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

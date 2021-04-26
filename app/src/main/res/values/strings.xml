@@ -34,8 +34,12 @@
     <string name="what_colour_is_this">What Colour Is This?</string>
     <string name="done">Done</string>
     <string name="check_answer">Check Answer</string>
+    <string name="blank"> </string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
 
     <!-- Strings for score page -->
     <string name="score_test">Score Test</string>
-    <string name="okay">Ok</string>
+    <string name="okay">OK</string>
+    <string name="foodTest">food</string>
 </resources>
