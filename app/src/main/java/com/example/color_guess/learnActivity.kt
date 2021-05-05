@@ -1,6 +1,7 @@
 package com.example.color_guess
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -9,6 +10,7 @@ import com.example.color_guess.databinding.ActivityLearnBinding
 
 @Suppress("ClassName")
 class learnActivity : AppCompatActivity() {
+    private var mMediaPlayer: MediaPlayer? = null
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -22,11 +24,15 @@ class learnActivity : AppCompatActivity() {
 
         //Listens to the return button and when the user clicks it takes the user to the start page (MainActivity)
         returnButton.setOnClickListener {
+            mMediaPlayer = null
+            playPop()
             intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
         nextButton.setOnClickListener {
+            mMediaPlayer = null
+            playBlop()
             learn()
         }
 
@@ -108,4 +114,23 @@ class learnActivity : AppCompatActivity() {
 
     }
 
+    //Function to play blop sound
+    private fun playBlop() {
+        if (mMediaPlayer == null) {
+            mMediaPlayer = MediaPlayer.create(this, R.raw.blop)
+            mMediaPlayer!!.isLooping = false
+            mMediaPlayer!!.start()
+            mMediaPlayer = null
+        }
+    }
+
+    //Function to play pop sound
+    private fun playPop() {
+        if (mMediaPlayer == null) {
+            mMediaPlayer = MediaPlayer.create(this, R.raw.pop)
+            mMediaPlayer!!.isLooping = false
+            mMediaPlayer!!.start()
+            mMediaPlayer = null
+        }
+    }
 }
