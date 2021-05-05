@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_blue">#05368B</color>
     <color name="white_200">#EDF5E1</color>
+    <color name="fresh_mint">#5CDB95</color>
+    <color name="light_mint">#8EE4AF</color>
+    <color name="mustard">#FFDB58</color>
+    <color name="maroon">#800000</color>
 </resources>

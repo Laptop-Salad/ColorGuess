@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".playActivity">
 
     <ImageView
@@ -24,8 +25,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:fontFamily="sans-serif-black"
         android:hint="@string/what_colour_is_this"
         android:importantForAutofill="no"
+        android:textColor="@color/mustard"
+        android:shadowColor="@color/dark_blue"
+        android:shadowRadius="3.0"
         android:inputType="textPersonName"
         android:text="@string/what_colour_is_this"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,8 +45,8 @@
         android:layout_marginTop="16dp"
         android:text="@string/done"
         android:background="@drawable/buttons"
-        android:textColor="@color/white_200"
-        app:backgroundTint="@color/dark_blue"
+        android:textColor="@color/dark_blue"
+        app:backgroundTint="@color/mustard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,21 +58,12 @@
         android:layout_marginEnd="16dp"
         android:text="@string/next"
         android:background="@drawable/buttons"
-        android:textColor="@color/white_200"
-        app:backgroundTint="@color/dark_blue"
+        android:textColor="@color/dark_blue"
+        app:backgroundTint="@color/mustard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/doneButton"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/blank"
-        app:layout_constraintBottom_toTopOf="@+id/playImg"
-        app:layout_constraintEnd_toStartOf="@+id/play_next"
-        app:layout_constraintStart_toEndOf="@+id/doneButton"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
