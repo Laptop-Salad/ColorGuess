@@ -25,12 +25,12 @@ class playActivity : AppCompatActivity() {
         val doneBtn = binding.doneButton
         val nextBtn = binding.playNext
 
-        doneBtn.setOnClickListener(){
+        doneBtn.setOnClickListener{
             intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        nextBtn.setOnClickListener(){
+        nextBtn.setOnClickListener{
             checkAnswer()
         }
     }
