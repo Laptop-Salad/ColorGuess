@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".playActivity">
 
     <ImageView
@@ -24,8 +25,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:fontFamily="sans-serif-black"
         android:hint="@string/what_colour_is_this"
         android:importantForAutofill="no"
+        android:textColor="@color/white_200"
+        android:shadowColor="@color/dark_blue"
+        android:shadowRadius="3.0"
         android:inputType="textPersonName"
         android:text="@string/what_colour_is_this"
         app:layout_constraintEnd_toEndOf="parent"
