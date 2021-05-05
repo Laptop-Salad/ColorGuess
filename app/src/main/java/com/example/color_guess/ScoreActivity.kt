@@ -1,12 +1,14 @@
 package com.example.color_guess
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.color_guess.databinding.ActivityScoreBinding
 
 class ScoreActivity : AppCompatActivity() {
+    private var mMediaPlayer: MediaPlayer? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -19,6 +21,8 @@ class ScoreActivity : AppCompatActivity() {
         val okBtn = binding.scoreOk
 
         okBtn.setOnClickListener{
+            mMediaPlayer = null
+            playPop()
             ok()
         }
 
@@ -36,5 +40,15 @@ class ScoreActivity : AppCompatActivity() {
 
         scoreView.text = score
 
+    }
+
+    //Function to play pop sound
+    private fun playPop() {
+        if (mMediaPlayer == null) {
+            mMediaPlayer = MediaPlayer.create(this, R.raw.pop)
+            mMediaPlayer!!.isLooping = false
+            mMediaPlayer!!.start()
+            mMediaPlayer = null
+        }
     }
 }
