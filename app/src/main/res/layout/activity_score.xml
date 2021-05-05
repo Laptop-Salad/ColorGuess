@@ -14,8 +14,8 @@
         android:layout_marginTop="60dp"
         android:text="@string/okay"
         android:background="@drawable/buttons"
-        android:textColor="@color/white_200"
-        app:backgroundTint="@color/dark_blue"
+        android:textColor="@color/dark_blue"
+        app:backgroundTint="@color/mustard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scoreView" />
@@ -29,7 +29,7 @@
         android:shadowColor="@color/dark_blue"
         android:shadowRadius="3.0"
         android:text="@string/score_test"
-        android:textColor="@color/white_200"
+        android:textColor="@color/mustard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
